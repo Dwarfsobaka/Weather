@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+    <AnchorPane fx:id="anchorpane" prefHeight="298.0" prefWidth="279.0"   xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller" >
+      <children>
+            <Text fill="#002966"  layoutX="100.0" layoutY="34.0"  smooth="true" stroke="#ccc400" strokeType="OUTSIDE" strokeWidth="0.0" text="Погода"  textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="0.0">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Text>
+        <TextField  fx:id="city" id="city" editable="true" layoutX="11.0" layoutY="80.0" prefWidth="230.0" promptText="" text="Введите город:" />
+
+        <Text   fx:id="temp"  id="Температура"  fill="$x1" layoutX="15.0" layoutY="196.0"  strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:">
+          <font>
+            <Font size="17.0" />
+          </font>
+          <fill>
+            <Color blue="0.250" green="0.250" red="0.250" fx:id="x1" />
+          </fill>
+        </Text>
+        <Text  fx:id="time" id="Время"  fill="$x1"  layoutX="15.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время:">
+          <font>
+            <Font size="17.0" />
+          </font>
+        </Text>
+        <Text  fx:id="date" id="Дата" fill="$x1"  layoutX="15.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата:" >
+        <font>
+          <Font size="17.0" />
+        </font>
+        </Text>
+        <Button fx:id="getWeather" layoutX="107.0" layoutY="130.0" mnemonicParsing="false" text="узнать" />
+      </children>
+    </AnchorPane>
+
+
+
